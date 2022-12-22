@@ -10,7 +10,7 @@ node {
      contenedortest.pull()
      contenedortest.withRun
      contenedortest.inside {
-      - u root
+       -u root
        sh 'npm install --only=dev'
        sh 'npm test'
      }
